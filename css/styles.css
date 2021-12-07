@@ -23,6 +23,10 @@ a {
   color: #000;
 }
 
+section a {
+  color: #fff;
+}
+
 ul {
   list-style-type: none;
 }
@@ -30,6 +34,10 @@ ul {
 p {
   margin: 5px 0;
   line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* Buttons */
@@ -66,6 +74,69 @@ p {
 .btn-light-outline {
   border-color: #fff;
   color: #fff;
+}
+
+/* Backgrounds */
+.bg-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.bg-extra {
+  background-color: var(--color-extra);
+  color: #000;
+}
+
+.bg-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Text styling */
+.text-center {
+  text-align: center;
+}
+
+.text-xl {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text-lg {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.text-md {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.text-sm {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+/* Padding */
+.py-sm {
+  padding: 10px 0;
+}
+
+.py-md {
+  padding: 20px 0;
+}
+
+.py-lg {
+  padding: 40px 0;
 }
 
 /* Navbar */
@@ -127,4 +198,37 @@ p {
 
 .navbar-nav-right li:nth-child(2) {
   margin: 0 5px;
+}
+
+/* Box */
+.box {
+  margin-bottom: 30px;
+}
+
+.box-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Media queries */
+@media (max-width: 960px) {
+  .text-xl {
+    font-size: 30px;
+  }
+
+  .text-lg {
+    font-size: 25px;
+  }
+
+  .text-md {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .box {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
