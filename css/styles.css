@@ -58,7 +58,8 @@ img {
   color: #000;
 }
 
-.btn-dark-outline:hover {
+.btn-dark-outline:hover,
+.btn-light-outline:hover {
   background-color: rgba(0, 0, 0, 0.06);
 }
 
@@ -208,6 +209,35 @@ img {
 .box-inner {
   max-width: 700px;
   margin: 0 auto;
+}
+
+.box-text {
+  max-width: 500px;
+  text-align: center;
+  justify-self: center;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.box-text .btn {
+  margin-top: 20px;
+}
+
+.box-f .box-text {
+  max-width: 600px;
+}
+
+/* Grid styles */
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-reversed :first-child {
+  order: 2;
 }
 
 /* Media queries */
